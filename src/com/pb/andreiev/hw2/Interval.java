@@ -5,9 +5,8 @@ import java.util.Scanner;
 public class Interval {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int number;
         System.out.println("Введіть число");
-        number = scanner.nextInt();
+        int number = scanner.nextInt();
         if (number >= 0 && number <= 14) {
             System.out.println("Інтервал  [0 -14]");
         } else if (number >= 15 && number <= 35) {
