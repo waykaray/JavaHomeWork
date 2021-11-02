@@ -14,7 +14,10 @@ public class Anagram {
           return new String(sortedText);
     }
     static void isAnagram (String enteredText1, String enteredText2) {
-        System.out.println(sort(enteredText1).equals(sort(enteredText2)) ? "Строки являются анаграмами" : "Строки не являются анаграмами");
+        if (sort(enteredText2).equals(sort(enteredText1))) {
+            System.out.println("Строки являются анаграмами");
+        }
+        else System.out.println("Строки не являются анаграмами");
     }
     public static void main(String[] args) {
           String enteredText1 = enterText().replaceAll("[\\p{P}|\\s]","").toLowerCase();
