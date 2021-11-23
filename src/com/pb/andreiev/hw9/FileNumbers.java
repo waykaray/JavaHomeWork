@@ -24,7 +24,7 @@ public class FileNumbers {
             }
         }
     }
-    public static void createOddNumbersFile() throws IOException {
+    public static void createOddNumbersFile() {
         Path path = Paths.get("C:\\Users\\HP\\IdeaProjects\\JavaHomeWork\\src\\com\\pb\\andreiev\\hw9\\numbers.txt");
         try {
             Scanner s = new Scanner(path);
