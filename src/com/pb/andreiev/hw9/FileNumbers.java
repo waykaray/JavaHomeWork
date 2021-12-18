@@ -42,7 +42,8 @@ public class FileNumbers {
                 if (array[n] % 2 == 0)
                     array[n] = 0;
             }
-            Path anotherPath = Files.createFile(Paths.get("C:\\Users\\HP\\IdeaProjects\\JavaHomeWork\\src\\com\\pb\\andreiev\\hw9\\odd-numbers.txt"));
+            Path anotherPath = Files.createFile(Paths.get("C:\\Users\\HP\\IdeaProjects\\JavaHomeWork\\src\\com\\pb\\andreiev" +
+                    "\\hw9\\odd-numbers.txt"));
             try (BufferedWriter w = Files.newBufferedWriter(anotherPath)) {
                 for (int n = 0; n <= array.length - 1; n++) {
                     if (n % 10 == 0) {
